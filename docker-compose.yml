@@ -1,0 +1,11 @@
+version: '2'
+services:
+  websocket:
+    build: ./7.0/
+    image: ws:7.0
+    ports:
+     - "80:80"
+     - "443:443"
+     - "8080:8080"
+    volumes:
+     - ./src:/src:rw
